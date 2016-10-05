@@ -77,8 +77,8 @@ public class Client
 
 			Document doc = builder.parse( isource );
 
-			System.out.println( "Selecting 4th offer" );
-			dumpChildren( doc.getElementsByTagName( "AirlineOffer" ).item( 3 ) );
+			System.out.println( "Selecting 1st offer" );
+			dumpChildren( doc.getElementsByTagName( "AirlineOffer" ).item( 0 ) );
 		}
 		catch ( Exception ex )
 		{
