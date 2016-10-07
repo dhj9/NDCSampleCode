@@ -21,6 +21,6 @@ puts res.body
 xml_doc = Nokogiri::XML( res.body )
 puts xml_doc
 
-puts "\nSelecting 4th offer:"
-offers = xml_doc.css("AirlineOffer")[3]
+puts "\nSelecting 1st offer:"
+offers = xml_doc.css("AirlineOffer")[0]
 puts offers
